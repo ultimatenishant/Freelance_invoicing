@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta name="description" content="Invoice Pro - The Best Freelance Invoicing Service for Fast and Professional Invoice Generation.">
+  <meta name="keywords" content="freelance invoicing, invoice generator, simple invoice for freelancers, free invoice maker">
+  <meta name="author" content="Invoice Pro Team">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph Tags for Social Media Sharing -->
+  <meta property="og:title" content="Invoice Pro - The #1 Freelance Invoicing Platform">
+  <meta property="og:description" content="Generate professional invoices, manage payments, and track your freelance income with ease.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:url" content="https://invoicepro.com">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Invoice Pro",
+  "url": "https://invoicepro.com",
+  "description": "The Best Freelance Invoicing Platform for Fast and Professional Invoice Generation",
+  "author": {
+    "@type": "Person",
+    "name": "Invoice Pro Team"
+  }
+}
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelance Invoicing Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h1>Freelance Invoicing & Services</h1>
+    </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Professional Invoicing & Freelance Solutions</h2>
+    <p>Helping businesses and freelancers manage finances with ease.</p>
+    <a href="#contact" class="cta-button">Get Started</a>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-card">
+      <h3>Invoicing Services</h3>
+      <p>Generate professional invoices and manage payments efficiently.</p>
+    </div>
+    <div class="service-card">
+      <h3>Financial Consulting</h3>
+      <p>Get expert advice on managing your freelance income and taxes.</p>
+    </div>
+    <div class="service-card">
+      <h3>Custom Business Solutions</h3>
+      <p>Tailored solutions to boost your productivity and workflow.</p>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>What My Clients Say</h2>
+    <div class="testimonial">
+      <p>"This service saved my business! The invoicing system is flawless and professional."</p>
+      <span>- Sarah, Business Owner</span>
+    </div>
+    <div class="testimonial">
+      <p>"Highly recommend this service for any freelancer looking to simplify finances."</p>
+      <span>- John, Freelancer</span>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>My Portfolio</h2>
+    <p>Successfully provided invoicing solutions for over 50+ clients worldwide.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Freelance Invoicing Service | All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <div class="container">
+    <h2>Why Choose Us?</h2>
+    <div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 20px;">
+      <span style="background-color: #007BFF; color: white; padding: 10px 20px; border-radius: 10px;">✅ Trusted by 500+ Freelancers</span>
+      <span style="background-color: #28a745; color: white; padding: 10px 20px; border-radius: 10px;">✅ Verified Business</span>
+      <span style="background-color: #f5a623; color: white; padding: 10px 20px; border-radius: 10px;">✅ GDPR Compliant</span>
+    </div>
+  </div>
+
+
+  <h2>Generate Your Free Invoice</h2>
+  <form id="invoice-form" class="container">
+    <input type="text" placeholder="Client Name" required>
+    <input type="text" placeholder="Service Provided" required>
+    <input type="number" placeholder="Amount ($)" required>
+    <button type="submit">Generate Invoice</button>
+  </form>
+  <div id="invoice-output" style="display: none; margin-top: 20px; background-color: #f1f1f1; padding: 15px;"></div>
+
+
+  <footer>
+    <p>&copy; 2025 Invoice Pro | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5f3fddf7cb8fe11f07ed9d54/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+
+
+  <script>
+    document.getElementById('invoice-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const clientName = event.target[0].value;
+      const service = event.target[1].value;
+      const amount = event.target[2].value;
+      const output = `
+        <h3>Invoice for ${clientName}</h3>
+        <p>Service Provided: ${service}</p>
+        <p>Amount: $${amount}</p>
+      `;
+      document.getElementById('invoice-output').innerHTML = output;
+      document.getElementById('invoice-output').style.display = 'block';
+    });
+  </script>
+
+
+  <div class="container" style="text-align: center; margin-top: 30px;">
+    <h3>💬 Loved Our Service? Leave Us a 5-Star Review!</h3>
+    <a href="https://g.page/r/CXczG5vHfWvwEAI/review" target="_blank">
+      <button style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        ⭐⭐⭐⭐⭐ Leave a Review
+      </button>
+    </a>
+  </div>
+
+
+  <div class="container" style="text-align: center; margin-top: 30px;">
+    <h3>📥 Download Your Free Freelancer’s Invoicing Checklist</h3>
+    <p>Enter your email to get instant access to our ultimate invoicing checklist.</p>
+    <form id="lead-magnet-form" style="margin-top: 20px;">
+      <input type="email" placeholder="Your Email" required style="padding: 10px; width: 60%;">
+      <button type="submit" style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Get My Free Checklist
+      </button>
+    </form>
+    <p id="download-link" style="display: none; margin-top: 10px;">
+      ✅ Download here: <a href="freelancer_invoicing_checklist.pdf" download>Freelancer’s Invoicing Checklist</a>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById("lead-magnet-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      document.getElementById("download-link").style.display = "block";
+      alert("Your free checklist is ready for download!");
+    });
+  </script>
+
+
+  <div class="container" style="text-align: center; margin-top: 30px;">
+    <h3>📩 Get Your Free Freelancer’s Invoicing Checklist</h3>
+    <p>Enter your email to receive the checklist and exclusive invoicing tips.</p>
+
+    <!-- Mailchimp Signup Form Embed (Replace 'YOUR-FORM-ACTION-URL' with actual Mailchimp form action URL) -->
+    <form action="YOUR-FORM-ACTION-URL" method="post" target="_blank" style="margin-top: 20px;">
+      <input type="email" name="EMAIL" placeholder="Your Email" required style="padding: 10px; width: 60%;">
+      <button type="submit" style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Get My Free Checklist
+      </button>
+    </form>
+  </div>
+
+</body>
+
+</html>
